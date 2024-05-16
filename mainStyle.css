@@ -1,0 +1,21 @@
+:root{
+    --background-color: #70dbae;
+}
+
+body {
+    background-color: var(--background-color);
+    margin : 0;
+    padding: 0;
+}
+
+.MainHighlightArea {
+    height: 300;
+    margin : 0;
+    padding: 0;
+}
+
+img {
+    width:100%;
+    height: auto;
+    margin: 0; /* Center the image horizontally */
+}

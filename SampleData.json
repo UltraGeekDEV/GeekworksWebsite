@@ -1,0 +1,41 @@
+{
+	"HighLightImageNames" : [
+        "SampleImage1",
+        "SampleImage2",
+        "SampleImage3"
+    ],
+    "Projects" : [
+        {
+            "HighlightImageName" : "SampleImage1",
+            "Title" : "SampleTitle1",
+            "ShortDescription" : "SampleDescription",
+            "Devlogs" : [
+                {
+                    "Paragraphs" : [
+                        {
+                            "ID" : "1",
+                            "ImageSide" : "0",
+                            "ImageName" : "",
+                            "Text" : "Sample text for the paragraph"
+                        },
+                        {
+                            "ID" : "2",
+                            "ImageSide" : "1",
+                            "ImageName" : "SampleImage1",
+                            "Text" : "Sample text for the paragraph"
+                        },
+                        {
+                            "ID" : "3",
+                            "ImageSide" : "2",
+                            "ImageName" : "SampleImage2",
+                            "Text" : "Sample text for the paragraph"
+                        }
+                    ],
+                    "HighlightImageName" : "SampleImage1",
+                    "Title" : "Sample devlog title",
+                    "ShortDescription" : "Sample devlog description"
+                }
+            ]
+        }
+    ]
+}
