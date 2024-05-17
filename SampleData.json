@@ -1,8 +1,8 @@
 {
 	"HighLightImageNames" : [
-        "SampleImage1",
-        "SampleImage2",
-        "SampleImage3"
+        "Placeholder1.jpg",
+        "Placeholder2.jpg",
+        "Placeholder3.png"
     ],
     "Projects" : [
         {
@@ -21,17 +21,43 @@
                         {
                             "ID" : "2",
                             "ImageSide" : "1",
-                            "ImageName" : "SampleImage1",
+                            "ImageName" : "Placeholder1.jpg",
                             "Text" : "Sample text for the paragraph"
                         },
                         {
                             "ID" : "3",
                             "ImageSide" : "2",
-                            "ImageName" : "SampleImage2",
+                            "ImageName" : "Placeholder2.jpg",
                             "Text" : "Sample text for the paragraph"
                         }
                     ],
-                    "HighlightImageName" : "SampleImage1",
+                    "HighlightImageName" : "Placeholder3.png",
+                    "Title" : "Sample devlog title",
+                    "ShortDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet mi sed pretium mollis. Aenean in augue justo. Nam et sagittis neque. Aliquam quis purus in mauris gravida bibendum. Nam eu dui quis odio iaculis placerat. Vivamus non nulla massa. Sed quis imperdiet nisl, nec sodales neque. Etiam rhoncus eros gravida dui finibus convallis. Donec sit amet dapibus neque. Praesent eget augue cursus turpis sodales tempor.Sed sit amet condimentum elit, eget imperdiet leo. Nam dui nisi, ornare id lectus vitae, fringilla hendrerit lorem. Duis auctor est vitae purus maximus auctor. Phasellus imperdiet leo eu cursus ultricies. Vivamus faucibus porta."
+
+                },
+                {
+                    "Paragraphs" : [
+                        {
+                            "ID" : "2",
+                            "ImageSide" : "1",
+                            "ImageName" : "",
+                            "Text" : "Sample text for the paragraph"
+                        },
+                        {
+                            "ID" : "2",
+                            "ImageSide" : "1",
+                            "ImageName" : "SampleImage1.png",
+                            "Text" : "Sample text for the paragraph"
+                        },
+                        {
+                            "ID" : "3",
+                            "ImageSide" : "2",
+                            "ImageName" : "SampleImage2.png",
+                            "Text" : "Sample text for the paragraph"
+                        }
+                    ],
+                    "HighlightImageName" : "Placeholder1.jpg",
                     "Title" : "Sample devlog title",
                     "ShortDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet mi sed pretium mollis. Aenean in augue justo. Nam et sagittis neque. Aliquam quis purus in mauris gravida bibendum. Nam eu dui quis odio iaculis placerat. Vivamus non nulla massa. Sed quis imperdiet nisl, nec sodales neque. Etiam rhoncus eros gravida dui finibus convallis. Donec sit amet dapibus neque. Praesent eget augue cursus turpis sodales tempor.Sed sit amet condimentum elit, eget imperdiet leo. Nam dui nisi, ornare id lectus vitae, fringilla hendrerit lorem. Duis auctor est vitae purus maximus auctor. Phasellus imperdiet leo eu cursus ultricies. Vivamus faucibus porta."
 

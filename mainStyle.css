@@ -56,14 +56,22 @@ img {
 }
 
 .DevlogHighlights {
+    margin-top: 4pc;
+    margin-bottom: 4pc;
     padding-top: 5pc;
     padding-bottom: 5pc;
     padding-left: 1pc;
     padding-right: 1pc;
+
+    background: rgba(var(--secondary),0.1);
+    background:
+        linear-gradient(180deg, rgba(var(--secondary-background-color), 0.0) 0%, rgba(var(--secondary-background-color), 0.05) 5pc , rgba(var(--secondary-background-color), 0.05) calc(100% - 5pc) , rgba(var(--secondary-background-color), 0.00) 100%)
 }
 
 .DevlogHighlights h2{
     padding-left: 1pc;
+    border-bottom: 0.25rem solid rgb(var(--accent));
+    margin-top: 0;
 }
 
 .DevlogHighlights table{
@@ -74,9 +82,13 @@ img {
 
 .DescriptionRow{
     background: rgba(var(--secondary),0.2);
+
     border-radius: 0.5rem 0.5rem 0 0;
     border-top: 0.5rem solid rgb(var(--accent));
     border-bottom: 1rem;
+
+    margin-bottom: 1pc;
+
     padding: 1pc;
     display: flex;
     align-items : center;
@@ -98,7 +110,8 @@ img {
     max-height: 300px;
     box-sizing: border-box;
     border-left: 0.25rem solid rgba(var(--secondary-background-color),0.7);
-    background-color: rgba(var(--background-color),0.2);
+    background: rgba(var(--background-color),0.2);
+    background: linear-gradient(90deg, rgba(var(--background-color),0.4) 0%, rgba(var(--background-color),0) 100%);
 }
 
 .Description h4{

@@ -8,7 +8,7 @@ fetch("SampleData.json").then(x=>x.json()).then(x=>data = x)
 function SetupData(){
     data.HighLightImageNames.forEach(element => {
     document.getElementById('HighlightedStoryArea').innerHTML +=
-    '<img class="MainSlide" src="'+element+'.png'+ '" alt="This is highlight image">';
+    '<img class="MainSlide" src="'+element+ '" alt="This is highlight image">';
     });
 
     let devlogs = data.Projects.map(x=>x.Devlogs).reduce((acc,val)=> acc.concat(val),[]).slice(0,2);
@@ -17,7 +17,7 @@ function SetupData(){
     for(let i = 0;i < devlogs.length;i++){
 
         let text = '<div class="Description"><h4>'+devlogs[i].Title+'</h4><br><p>'+devlogs[i].ShortDescription+'</p></div>';
-        let image = '<img class="ScaledImage" src="' + devlogs[i].HighlightImageName+'.png">'
+        let image = '<img class="ScaledImage" src="' + devlogs[i].HighlightImageName+'">'
         let table = '<tr><div class="DescriptionRow">';
         if(i%2 == 0){
             table += image+text;
