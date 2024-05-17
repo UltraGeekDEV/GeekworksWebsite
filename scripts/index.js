@@ -12,20 +12,23 @@ function SetupData(){
     });
 
     let devlogs = data.Projects.map(x=>x.Devlogs).reduce((acc,val)=> acc.concat(val),[]).slice(0,2);
-    console.log(devlogs);
 
     for(let i = 0;i < devlogs.length;i++){
 
-        let text = '<div class="Description"><h4>'+devlogs[i].Title+'</h4><br><p>'+devlogs[i].ShortDescription+'</p></div>';
-        let image = '<img class="ScaledImage" src="' + devlogs[i].HighlightImageName+'">'
-        let table = '<tr><div class="DescriptionRow">';
-        if(i%2 == 0){
-            table += image+text;
-        }
-        else{
-            table += text+image;
-        }
-        document.getElementById('DevlogTable').innerHTML += table+'</div></tr>';
+        let table = '<div class="DescriptionRow"><h3>'+devlogs[i].Title+'</h3>';
+        table += '<div class="imgTd"><img src="' + devlogs[i].HighlightImageName+'"></img></div>'+
+        '<div class="Description"><p>'+devlogs[i].ShortDescription+'</p><div>';
+        document.getElementById('DevlogTable').innerHTML += table+'</div>';
+    }
+
+    let projects = data.Projects;
+
+    for(let i = 0;i < projects.length;i++){
+
+        let table = '<div class="DescriptionRow"><h3>'+projects[i].Title+'</h3>';
+        table += '<div class="imgTd"><img src="' + projects[i].HighlightImageName+'"></img></div>'+
+        '<div class="Description"><p>'+projects[i].ShortDescription+'</p><div>';
+        document.getElementById('ProjectTable').innerHTML += table+'</div>';
     }
 
     showSlides();
@@ -46,4 +49,3 @@ function showSlides(){
 
     setTimeout(showSlides,2000);
 }
-

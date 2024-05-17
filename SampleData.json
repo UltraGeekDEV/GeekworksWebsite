@@ -6,7 +6,7 @@
     ],
     "Projects" : [
         {
-            "HighlightImageName" : "SampleImage1",
+            "HighlightImageName" : "SampleImage1.png",
             "Title" : "SampleTitle1",
             "ShortDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet mi sed pretium mollis. Aenean in augue justo. Nam et sagittis neque. Aliquam quis purus in mauris gravida bibendum. Nam eu dui quis odio iaculis placerat. Vivamus non nulla massa. Sed quis imperdiet nisl, nec sodales neque. Etiam rhoncus eros gravida dui finibus convallis. Donec sit amet dapibus neque. Praesent eget augue cursus turpis sodales tempor.Sed sit amet condimentum elit, eget imperdiet leo. Nam dui nisi, ornare id lectus vitae, fringilla hendrerit lorem. Duis auctor est vitae purus maximus auctor. Phasellus imperdiet leo eu cursus ultricies. Vivamus faucibus porta.",
             "Devlogs" : [
