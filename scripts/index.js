@@ -11,6 +11,23 @@ function SetupData(){
     '<img class="MainSlide" src="'+element+'.png'+ '" alt="This is highlight image">';
     });
 
+    let devlogs = data.Projects.map(x=>x.Devlogs).reduce((acc,val)=> acc.concat(val),[]).slice(0,2);
+    console.log(devlogs);
+
+    for(let i = 0;i < devlogs.length;i++){
+
+        let text = '<div class="Description"><h4>'+devlogs[i].Title+'</h4><br><p>'+devlogs[i].ShortDescription+'</p></div>';
+        let image = '<img class="ScaledImage" src="' + devlogs[i].HighlightImageName+'.png">'
+        let table = '<tr><div class="DescriptionRow">';
+        if(i%2 == 0){
+            table += image+text;
+        }
+        else{
+            table += text+image;
+        }
+        document.getElementById('DevlogTable').innerHTML += table+'</div></tr>';
+    }
+
     showSlides();
 }
 
@@ -29,3 +46,4 @@ function showSlides(){
 
     setTimeout(showSlides,2000);
 }
+
