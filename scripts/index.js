@@ -14,10 +14,9 @@ function SetupData(){
     let devlogs = data.Projects.map(x=>x.Devlogs).reduce((acc,val)=> acc.concat(val),[]).slice(0,2);
 
     for(let i = 0;i < devlogs.length;i++){
-
-        let table = '<div class="DescriptionRow"><h3>'+devlogs[i].Title+'</h3>';
+        let table = '<div style="cursor: pointer;" onclick="window.location = \'Pages/devlog.html?devlogId='+devlogs[i].ID+ '\'" class="DescriptionRow"><h3>'+devlogs[i].Title+'</h3>';
         table += '<div class="imgTd"><img src="' + devlogs[i].HighlightImageName+'"></img></div>'+
-        '<div class="Description"><p>'+devlogs[i].ShortDescription+'</p><div>';
+        '<div class="Description"><p>'+devlogs[i].ShortDescription+'</p></div>';
         document.getElementById('DevlogTable').innerHTML += table+'</div>';
     }
 

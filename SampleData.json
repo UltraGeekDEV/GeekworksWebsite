@@ -60,7 +60,7 @@
                         {
                             "ID" : 1,
                             "Type" : "p",
-                            "ImageSide" : 1,
+                            "ImageSide" : 0,
                             "ImageName" : "",
                             "Text" : "Sample text for the paragraph"
                         },

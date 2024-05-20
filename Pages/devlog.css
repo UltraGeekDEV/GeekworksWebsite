@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:700|Ubuntu:400');
 
-html {font-size: min(3.5vh,1.5vw)} /* 16px */
+html {font-size: min(3.5vh,3vw)} /* 16px */
 
 h1 {font-size: 3rem; /* 90.4px */}
 
@@ -56,10 +56,10 @@ img {
 
 #TextArea{
     margin-top: 5rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-left: min(7rem,10vw);
+    margin-right: min(7rem,10vw);
+    padding-left: min(3rem,5vw);
+    padding-right: min(3rem,5vw);
     padding-bottom: 4rem;
     padding-top: 2rem;
 

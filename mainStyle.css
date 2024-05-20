@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:700|Ubuntu:400');
 
-html {font-size: min(3.5vh,1.5vw)} /* 16px */
+html {font-size: min(3.5vh,3vw)} /* 16px */
 
 h1 {font-size: 3rem; /* 90.4px */}
 
@@ -40,7 +40,7 @@ body {
 }
 
 p {
-    font-size: 2.5vh;
+    font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5 {
@@ -60,21 +60,25 @@ img {
 }
 
 .DevlogHighlights {
-    margin-top: 5rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-top: 1rem;
+    margin-left: min(7rem,10vw);
+    margin-right: min(7rem,10vw);
+    padding-left: min(3rem,5vw);
+    padding-right: min(3rem,5vw);
     padding-bottom: 4rem;
     padding-top: 2rem;
+    border-bottom: 0.5rem solid rgba(var(--accent), 0.6);
+    border-radius: 0 0 0.25rem 0.25rem;
     background: rgba(var(--secondary),0.1);
     background:
-        linear-gradient(180deg, rgba(var(--secondary-background-color), 0.0) 0%, rgba(var(--secondary-background-color), 0.05) 4rem , rgba(var(--secondary-background-color), 0.05) calc(100% - 4rem) , rgba(var(--secondary-background-color), 0.00) 100%)
+        linear-gradient(180deg, rgba(var(--secondary-background-color), 0.0) 0%, rgba(var(--secondary-background-color), 0.05) 4rem )
 }
 
 .DevlogHighlights h2{
-    padding-left: 2vh;
-    border-bottom: 0.25rem solid rgb(var(--accent));
+    padding-left: 0.5rem;
+    border-bottom: 0.25rem solid rgba(var(--accent),1);
+    /*border-left: 0.25rem solid rgba(var(--secondary-background-color),0.7);*/
+    border-radius: 0.25rem;
     margin-top: 0;
 }
 
@@ -88,7 +92,7 @@ img {
     background: rgba(var(--secondary),0.2);
 
     border-radius: 0.25rem 0.25rem 0 0;
-    border-top: 0.25rem solid rgb(var(--accent));
+    border-top: 0.25rem solid rgba(var(--accent),0.8);
     border-bottom: 1rem;
     max-width : 100%;
     min-height: 0;
@@ -98,6 +102,8 @@ img {
     height:auto;; 
 
     padding: 2rem;
+    padding-left: min(2rem,5vw);
+    padding-right: min(2rem,5vw);
     padding-top: 1rem;
 }
 
@@ -105,13 +111,13 @@ img {
     float :left; 
     align-self: center;
     height: 6rem;
-    margin : 0.75rem 0.5rem 0.25rem 1.75rem;
+    margin : 0.75rem 0.5rem 0.25rem min(1.75rem,5vw);
     border-radius: 0.5rem;
     width:auto; 
 }
 
 .Description{
-    margin-left: 0.5rem;
+    margin-left: min(0.75rem,5vw);
     padding: 0.5rem;
     padding-top: 0.5rem;
     padding-right: 2rem;

@@ -1,8 +1,7 @@
 const queryString = window.location.search;
 // Parse the query string
 const urlParams = new URLSearchParams(queryString);
-const project = urlParams.get("project");
-const devlogId = urlParams.get("devlog");
+const devlogId = urlParams.get("devlogId");
 
 let devlogData = [];
 
@@ -10,7 +9,7 @@ LoadData();
 
 async function LoadData(){
     var json = await fetch("../SampleData.json").then(x=>x.json());
-    devlogData = json.Projects.find(proj => proj.Title == project).Devlogs.find(x => x.ID == devlogId);
+    devlogData = json.Projects.map(x=>x.Devlogs).reduce((acc,val)=> acc.concat(val),[]).find(x => x.ID == devlogId);
     DisplayData();
 }
 
