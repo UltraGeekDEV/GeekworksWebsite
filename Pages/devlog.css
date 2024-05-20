@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Ubuntu:400');
+
+html {font-size: min(3.5vh,1.5vw)} /* 16px */
+
+h1 {font-size: 3rem; /* 90.4px */}
+
+h2 {font-size: 2.5rem /* 64px */}
+
+h3 {font-size: 1.6rem;/* 45.28px */}
+
+h4 {font-size: 1.2rem; /* 32px */}
+
+h5 {font-size: 1rem; /* 22.56px */}
+
+small {font-size: min(3.5vh,3.5vw); /* 11.36px */}
+
+:root{
+    --background-color: 10, 8, 7;
+    --secondary-background-color: 180, 239, 224;
+    --accent: 239, 121, 17;
+    --secondary: 67, 93, 95;
+    --text: 244, 241, 239;
+
+    --textFont: "Ubuntu",
+    --headingFont: "Inter",
+}
+
+body {
+    background-color: rgb(var(--background-color));
+    margin : 0;
+    padding: 0;
+    color : rgb(var(--text));
+    font-family: "Ubuntu";
+    font-weight: 400;
+    text-align: justify;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Inter';
+    font-weight: 700;
+}
+
+img {
+    width:100%;
+    height: auto;
+    margin: 0;
+}
+
+#BannerImage img{
+    border-bottom: 0.25rem solid rgb(var(--accent));
+}
+
+#TextArea{
+    margin-top: 5rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+
+    background: 
+    linear-gradient(180deg, rgba(var(--secondary-background-color), 0.0) 0%, rgba(var(--secondary-background-color), 0.1) 4rem , rgba(var(--secondary-background-color), 0.1) calc(100% - 4rem) , rgba(var(--secondary-background-color), 0.00) 100%);
+}
+
+#TextArea p{
+    margin-top: 3rem;
+}
+
+#TextArea img{
+    height: 6.5rem;
+    width:auto;
+    margin-top: 0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#TextArea h1,h2,h3,h4,h5{
+    border-bottom: 0.25rem solid rgb(var(--accent));
+}
