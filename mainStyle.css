@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:700|Ubuntu:400');
 
-html {font-size: 100%} /* 16px */
+html {font-size: min(3.5vh,1.5vw)} /* 16px */
 
-h1 {font-size: 10vh /* 90.4px */}
+h1 {font-size: 3rem; /* 90.4px */}
 
-h2 {font-size: 7vh /* 64px */}
+h2 {font-size: 2.5rem /* 64px */}
 
-h3 {font-size: 5vh /* 45.28px */}
+h3 {font-size: 1.6rem;/* 45.28px */}
 
-h4 {font-size: 3vh; /* 32px */}
+h4 {font-size: 1.2rem; /* 32px */}
 
-h5 {font-size: 2.5vh; /* 22.56px */}
+h5 {font-size: 1rem; /* 22.56px */}
 
-small {font-size: 2.5vh; /* 11.36px */}
+small {font-size: 1rem; /* 11.36px */}
 
 root {
     font-size: small;
@@ -60,15 +60,16 @@ img {
 }
 
 .DevlogHighlights {
-    margin-top: 8vh;
-    margin-bottom: 8vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    margin-top: 5rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
     background: rgba(var(--secondary),0.1);
     background:
-        linear-gradient(180deg, rgba(var(--secondary-background-color), 0.0) 0%, rgba(var(--secondary-background-color), 0.05) 10vh , rgba(var(--secondary-background-color), 0.05) calc(100% - 10vh) , rgba(var(--secondary-background-color), 0.00) 100%)
+        linear-gradient(180deg, rgba(var(--secondary-background-color), 0.0) 0%, rgba(var(--secondary-background-color), 0.05) 4rem , rgba(var(--secondary-background-color), 0.05) calc(100% - 4rem) , rgba(var(--secondary-background-color), 0.00) 100%)
 }
 
 .DevlogHighlights h2{
@@ -78,16 +79,16 @@ img {
 }
 
 .DevlogHighlights table{
-    border-radius: 4vh;
-    padding: 2vh;
-    width : 100vw;
+    border-radius: 2rem;
+    padding: 3rem;
+    width : 100%;
 }
 
 .DescriptionRow{
     background: rgba(var(--secondary),0.2);
 
-    border-radius: 0.5rem 0.5rem 0 0;
-    border-top: 0.5rem solid rgb(var(--accent));
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-top: 0.25rem solid rgb(var(--accent));
     border-bottom: 1rem;
     max-width : 100%;
     min-height: 0;
@@ -97,35 +98,37 @@ img {
     height:auto;; 
 
     padding: 2rem;
+    padding-top: 1rem;
 }
 
 .DescriptionRow img{
     float :left; 
     align-self: center;
-    height: 15vh;
-    margin : 0.5rem 1rem 1rem 2.5rem;
+    height: 6rem;
+    margin : 0.75rem 0.5rem 0.25rem 1.75rem;
+    border-radius: 0.5rem;
     width:auto; 
 }
 
 .Description{
     margin-left: 0.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     padding-top: 0.5rem;
     padding-right: 2rem;
     
-    border-left: 1rem solid rgba(var(--secondary-background-color),0.7);
+    border-left: 0.5rem solid rgba(var(--secondary-background-color),0.7);
     background: rgba(var(--background-color),0.2);
     background: linear-gradient(90deg, rgba(var(--background-color),0.4) 0%, rgba(var(--background-color),0) 100%);
 }
 
 .DevlogHighlights h3{
-    margin-top: 2vh;
-    margin-bottom: 1.5vh;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .Description p{
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 3vh;
+    line-height: 1.1rem;
 }
 
