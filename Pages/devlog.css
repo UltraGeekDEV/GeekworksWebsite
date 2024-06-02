@@ -15,21 +15,28 @@ h5 {font-size: 1rem; /* 22.56px */}
 small {font-size: 1rem; /* 11.36px */}
 
 :root{
-    --background-color: 10, 8, 7;
+    --background-color: 16, 17, 22;
     --secondary-background-color: 180, 239, 224;
-    --accent: 239, 121, 17;
+    --accent: 239, 83, 17;
     --secondary: 67, 93, 95;
-    --text: 244, 241, 239;
+    --text: 251, 243, 238;
+    --heading-text: 244, 243, 242;
 
     --textFont: "Ubuntu",
     --headingFont: "Inter",
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 1rem ;
 }
 
 body {
     background-color: rgb(var(--background-color));
     margin : 0;
     padding: 0;
-    color : rgb(var(--text));
+    color : rgba(var(--text),0.9);
     font-family: "Ubuntu";
     font-weight: 400;
     text-align: justify;
@@ -42,6 +49,7 @@ p {
 h1, h2, h3, h4, h5 {
     font-family: 'Inter';
     font-weight: 700;
+    color: rgb(var(--heading-text));
 }
 
 img {
@@ -50,25 +58,45 @@ img {
     margin: 0;
 }
 
+a:link {
+    color: rgba(var(--accent),0.8);
+}
+
+
+a:hover {
+    color: rgba(var(--accent),1);
+}
+
+a:visited {
+    color: rgba(var(--secondary-background-color),0.5);
+}
+
+a:visited:hover {
+    color: rgba(var(--secondary-background-color),0.9);
+}
+
+
 #BannerImage img{
     border-bottom: 0.25rem solid rgb(var(--accent));
 }
 
+#TextArea h3{
+    text-decoration: underline rgb(var(--accent));
+    text-align: left;
+}
+
 #TextArea{
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-left: min(7rem,10vw);
     margin-right: min(7rem,10vw);
     padding-left: min(3rem,5vw);
     padding-right: min(3rem,5vw);
     padding-bottom: 4rem;
-    padding-top: 2rem;
-
-    background: 
-    linear-gradient(180deg, rgba(var(--secondary-background-color), 0.0) 0%, rgba(var(--secondary-background-color), 0.1) 4rem , rgba(var(--secondary-background-color), 0.1) calc(100% - 4rem) , rgba(var(--secondary-background-color), 0.00) 100%);
+    padding-top: 0rem;
 }
 
 #TextArea p{
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 #TextArea img{
@@ -77,8 +105,68 @@ img {
     margin-top: 0.25rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    border-radius: 0.5rem;
 }
 
-#TextArea h1,h2,h3,h4,h5{
+#TextArea .fullWidthImage{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 1rem;
+}
+
+#TextArea h1,h2,h4,h5{
     border-bottom: 0.25rem solid rgb(var(--accent));
+}
+
+#NavigationBar {
+    margin-top:2rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width:75vw;
+    margin-left: 12.5vw;
+    margin-bottom: 2rem;
+}
+
+table{
+    margin-left:12vw;
+}
+
+.sideNav{
+    width: 20vw;
+}
+
+.leftNav{
+    background-color: rgba(var(--secondary-background-color),0.2);
+    align-items: end;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.35rem;
+    position: relative;
+    border-radius: 0.25rem;
+}
+
+.rightNav{
+    background-color: rgba(var(--secondary-background-color),0.2);
+    align-items: end;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.35rem;
+    position: relative;
+    border-radius: 0.25rem;
+}
+
+
+.CenterNav{
+    background-color: rgba(var(--secondary-background-color),0.2);
+    align-items: end;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.35rem;
+    position: relative;
+    border-radius: 0.25rem;
 }
