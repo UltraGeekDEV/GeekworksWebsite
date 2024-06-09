@@ -6,20 +6,6 @@ fetch("Data.json").then(x=>x.json()).then(x=>data = x)
 
 
 function SetupData(){
-    data.HighlightImageNames.forEach(element => {
-    document.getElementById('HighlightedStoryArea').innerHTML +=
-    '<img class="MainSlide" src="'+element+ '" alt="This is highlight image">';
-    });
-
-    let devlogs = data.Projects.map(x=>x.Devlogs).reduce((acc,val)=> acc.concat(val),[]);
-
-    for(let i = 0;i < devlogs.length;i++){
-        let table = '<div style="cursor: pointer;" onclick="window.location = \'Pages/devlog.html?devlogId='+devlogs[i].Id+ '\'" class="DescriptionRow"><h3>Devlog '+devlogs[i].Id+': '+devlogs[i].Title+'</h3>';
-        table += '<div class="imgTd"><img src="' + devlogs[i].HighlightImageName+'"></img></div>'+
-        '<div class="Description"><p>'+devlogs[i].ShortDescription+'</p></div>';
-        document.getElementById('DevlogTable').innerHTML += table+'</div>';
-    }
-
     showSlides();
 }
 
